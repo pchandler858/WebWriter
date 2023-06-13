@@ -27,15 +27,15 @@ module.exports = () => {
         swDest: "src-sw.js",
       }),
       new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
         name: "Just another text editor",
         short_name: "JATE",
         description: "A simple text editor",
-        background_color: "#225ca3", 
+        background_color: "#225ca3",
         theme_color: "#225ca3",
-        inject: true,
-        fingerprints: false,
-        start_url: "./",
-        publicPath: "./",
+        start_url: "/",
+        publicPath: "/",
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
@@ -53,7 +53,7 @@ module.exports = () => {
           use: ["style-loader", "css-loader"],
         },
         {
-          test: /\m?.js$/,
+          test: /\.m?js$/,
           exclude: /node_modules/,
           use: {
             loader: "babel-loader",
