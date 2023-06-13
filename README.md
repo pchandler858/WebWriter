@@ -41,7 +41,7 @@ This will create a `dist` directory in the root of your project with the built f
 
 ## Live Demo
 
-WebWriter is deployed on Heroku and can be accessed [here](https://your-heroku-app-link/).
+WebWriter is deployed on Heroku and can be accessed [here](https://web-writer.herokuapp.com/).
 
 ## Screenshot
 
