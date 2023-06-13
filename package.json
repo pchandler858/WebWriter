@@ -28,8 +28,5 @@
     "style-loader": "^3.3.3",
     "webpack-cli": "^5.1.4",
     "workbox-webpack-plugin": "^6.3.0"
-  },
-  "engines": {
-    "node": "16.20.0"
   }
 }
